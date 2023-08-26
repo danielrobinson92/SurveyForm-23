@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survery Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <script src="script.js" type="module"></script>
+<div class="outerContainer">
+    <div class="container">
+        <h4 style="text-align: center; font-family: cursive;">Form Submit</h4>
+        <div class="row" id="flex">
+            <div class="leftSide col-4">
+                <form id="myform">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="fname" placeholder="First Name" required />
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lname" placeholder="Last Name" required />
+                    <label for="addr" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="addr" placeholder="Address" required />
+                    <label for="pin" class="form-label">Pin Code</label>
+                    <input type="number" class="form-control" id="pin" placeholder="Pincode" required />
+
+                    <!-- Radio Button -->
+
+                    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="mgender" value="Male" />
+                            <label class="form-check-label" for="mgender" >Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="fgender" value="Female" required />
+                            <label class="form-check-label" for="fgender">Female</label>
+                        </div>
+                    <!-- Check Box -->
+                    <legend class="col-form-label">Choice of food <i>(must choose at least 2 out of 5 options)</i></legend>
+                    <input class="form-check-input" type="checkbox" value="North Indian" id="NI" name="food" /><label class="form-check-label" for="NI" >
+                    &nbsp North Indian</label><br>
+                    <input class="form-check-input" type="checkbox" value="South Indian" id="SI" name="food"/><label class="form-check-label" for="SI">
+                    &nbsp South Indian</label><br>
+                    <input class="form-check-input" type="checkbox" value="Chinese" id="Chinese" name="food" /><label class="form-check-label" for="Chinese" >
+                    &nbsp Chinese</label><br>
+                    <input class="form-check-input" type="checkbox" value="Japanese" id="Japanese" name="food" /><label class="form-check-label" for="Japanese">
+                    &nbsp Japanese</label><br>
+                    <input class="form-check-input" type="checkbox" value="Sea" id="Sea" name="food" /><label class="form-check-label" for="Sea">
+                    &nbsp Sea</label><br><br>
+                    <!-- Button -->
+                    <label for="state" class="form-label">State</label>
+                    <input type="text" class="form-control" id="state" placeholder="State" required />
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" class="form-control" id="country" placeholder="Country" required> <br>
+
+                    <!-- Submit Buttons -->
+                    <input class="btn btn-secondary" type="reset" value="Reset">&nbsp&nbsp
+                    <input class="btn btn-primary" type="submit" value="Submit"/>  &nbsp&nbsp
+                    <input class="btn btn-primary" type="button" value="Clear All" id = "clearall">  &nbsp&nbsp                    
+                </form>
+            </div>
+            <div class="rightside col-7">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Pincode</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Food</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Country</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    
+                    </tbody>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
